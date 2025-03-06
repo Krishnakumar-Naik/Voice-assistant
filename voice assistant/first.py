@@ -12,6 +12,25 @@ from tkinter import scrolledtext
 from PIL import Image, ImageTk
 import webbrowser
 
+import cv2
+
+def open_camera():
+    talk("Opening camera")
+    cap = cv2.VideoCapture(0)
+    while True:
+        ret, frame = cap.read()
+        if not ret:
+            break
+        cv2.imshow('Camera', frame)
+        if cv2.waitKey(1) & 0xFF == ord('q'):
+            break
+    cap.release()
+    cv2.destroyAllWindows()
+
+# Add this inside the `run_assistant` function:
+
+
+
 # Initialize the recognizer and engine
 recognizer = sr.Recognizer()
 engine = pyttsx3.init()
@@ -111,7 +130,10 @@ def run_assistant():
     elif 'brightness' in command and 'up' in command:
         talk("Increasing brightness")
         pyautogui.hotkey('fn','F8')  # For certain laptops, you might need the 'fn' key
-    
+        
+    elif 'open camera' in command:
+        open_camera()
+
     elif 'brightness' in command and 'down' in command:
         talk("Decreasing brightness")
         pyautogui.hotkey('fn','F7')  # Same as above
