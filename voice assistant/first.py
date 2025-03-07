@@ -11,7 +11,6 @@ import tkinter as tk
 from tkinter import scrolledtext
 from PIL import Image, ImageTk
 import webbrowser
-
 import cv2
 
 # opening camara function
@@ -140,7 +139,7 @@ def run_assistant():
         pyautogui.hotkey('fn','F7')  # Same as above
     
     else:
-        talk("Sorry, I can't handle that command.")
+        talk("Sorry, I can't handle that command.") #above commands are not matched
     
     # Update the output window
     output_text.insert(tk.END, f"Assistant: {command}\n")
