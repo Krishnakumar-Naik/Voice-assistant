@@ -133,7 +133,7 @@ def run_assistant():
         pyautogui.hotkey('fn','F8')  # For certain laptops, you might need the 'fn' key
         
     elif 'open camera' in command:
-        open_camera()
+        open_camera() #open camera function call
 
     elif 'brightness' in command and 'down' in command:
         talk("Decreasing brightness")
