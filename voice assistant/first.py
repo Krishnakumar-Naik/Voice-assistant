@@ -14,6 +14,7 @@ import webbrowser
 
 import cv2
 
+# opening camara function
 def open_camera():
     talk("Opening camera")
     cap = cv2.VideoCapture(0)
