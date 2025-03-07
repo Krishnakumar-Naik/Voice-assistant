@@ -27,10 +27,6 @@ def open_camera():
     cap.release()
     cv2.destroyAllWindows()
 
-# Add this inside the `run_assistant` function:
-
-
-
 # Initialize the recognizer and engine
 recognizer = sr.Recognizer()
 engine = pyttsx3.init()
