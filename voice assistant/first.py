@@ -11,7 +11,7 @@ import tkinter as tk
 from tkinter import scrolledtext
 from PIL import Image, ImageTk
 import webbrowser
-import cv2 #for camera
+import cv2 #pip install opencv-contrib-python
 
 # opening camara function
 def open_camera():
