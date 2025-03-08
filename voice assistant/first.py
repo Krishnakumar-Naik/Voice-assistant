@@ -11,7 +11,7 @@ import tkinter as tk
 from tkinter import scrolledtext
 from PIL import Image, ImageTk
 import webbrowser
-import cv2
+import cv2 #for camera
 
 # opening camara function
 def open_camera():
