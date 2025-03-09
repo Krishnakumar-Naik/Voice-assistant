@@ -77,7 +77,7 @@ def run_assistant():
         talk(f"Playing {song} on YouTube")
         pywhatkit.playonyt(song)
     
-    elif 'time' in command:
+    elif 'time' in command: #tell the time
         current_time = datetime.datetime.now().strftime('%I:%M %p')
         talk(f"The current time is {current_time}")
     
