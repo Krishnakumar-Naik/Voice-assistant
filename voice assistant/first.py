@@ -119,7 +119,7 @@ def run_assistant():
         talk(f"Searching Google for {query}")
         webbrowser.open(f"https://www.google.com/search?q={query}")
     
-    elif 'shutdown' in command:
+    elif 'shutdown' in command: #shoutdown the pc
         talk("Shutting down the system.")
         os.system('shutdown /s /t 1')
     
