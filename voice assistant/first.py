@@ -81,7 +81,7 @@ def run_assistant():
         current_time = datetime.datetime.now().strftime('%I:%M %p')
         talk(f"The current time is {current_time}")
     
-    elif 'search for' in command:
+    elif 'search for' in command:#search in the voice
         query = command.replace('search for', '').strip()
         talk(f"Searching for {query} on Wikipedia")
         try:
