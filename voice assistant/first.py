@@ -1,4 +1,4 @@
-import sounddevice as sd
+import sounddevice as sd #importings
 import numpy as np
 import pyttsx3
 import pywhatkit
