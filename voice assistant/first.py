@@ -77,7 +77,7 @@ def run_assistant():
         talk(f"Playing {song} on YouTube")
         pywhatkit.playonyt(song)
     
-    elif 'time' in command: #tell the time
+    elif 'time' in command: #tells the time
         current_time = datetime.datetime.now().strftime('%I:%M %p')
         talk(f"The current time is {current_time}")
     
@@ -114,7 +114,7 @@ def run_assistant():
         talk(f"Searching for {query} on Amazon")
         webbrowser.open(f"https://www.amazon.in/s?k={query}")
     
-    elif 'google' in command:
+    elif 'google' in command: #search anything in google
         query = command.replace('google', '').strip()
         talk(f"Searching Google for {query}")
         webbrowser.open(f"https://www.google.com/search?q={query}")
