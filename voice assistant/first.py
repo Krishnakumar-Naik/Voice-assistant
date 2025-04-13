@@ -91,7 +91,8 @@ def run_assistant():
             talk("The search term is ambiguous. Please try again.")
         except wikipedia.PageError:
             talk("Sorry, I couldn't find anything on that topic.")
-    
+
+    #open notepad, calculator, linkedin and facebook
     elif 'open' in command:
         app = command.replace('open', '').strip()
         talk(f"Opening {app}")
