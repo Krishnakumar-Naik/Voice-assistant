@@ -13,7 +13,7 @@ from PIL import Image, ImageTk
 import webbrowser
 import cv2
 
-# function for camera
+# camera function
 def open_camera():
     talk("Opening camera")
     cap = cv2.VideoCapture(0)
