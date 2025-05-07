@@ -85,7 +85,7 @@ def run_assistant():
         query = command.replace('search for', '').strip()
         talk(f"Searching for {query} on Wikipedia")
         try:
-            info = wikipedia.summary(query, sentences=2)
+            info = wikipedia.summary(query, sentences=2) #search from wikipedia 
             talk(info)
         except wikipedia.DisambiguationError:
             talk("The search term is ambiguous. Please try again.")
