@@ -14,18 +14,18 @@ import webbrowser
 import cv2
 
 # camera function
-def open_camera():
-    talk("Opening camera")
-    cap = cv2.VideoCapture(0)
-    while True:
-        ret, frame = cap.read()
-        if not ret:
-            break
-        cv2.imshow('Camera', frame)
-        if cv2.waitKey(1) & 0xFF == ord('q'):
-            break
-    cap.release()
-    cv2.destroyAllWindows()
+#def open_camera():
+    #talk("Opening camera")
+    #cap = cv2.VideoCapture(0)
+    #while True:
+        #ret, frame = cap.read()
+        #if not ret:
+            #break
+        #cv2.imshow('Camera', frame)
+        #if cv2.waitKey(1) & 0xFF == ord('q'):
+            #break
+    #cap.release()
+    #cv2.destroyAllWindows()
 
 # Initialize the recognizer and engine
 recognizer = sr.Recognizer()
